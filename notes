@@ -1,0 +1,8 @@
+  public int Mark13()
+        {
+            return Marks[12] == 1 ? (int)(Stats[2] * .75) : 0;
+        }
+
+        public int Mark(int markIndex, int statsIndex, double statsMultiplier)
+        {
+            try { return Marks[markIndex - 1] == 1 ? (markIndex == 7 ? 1 : (int)(Stats[statsIndex] * statsMultiplier)) : 0; }
