@@ -1,0 +1,10 @@
+[Mark 12] Mark data: -1.
+[Stats 2] Mark data: 60.
+An error occurred with Mark12() function:
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at wServer.realm.entities.player.Player.Mark(Int32 markIndex, Int32 statsIndex, Double statsMultiplier) in C:\Vortex\Vortex Source\wServer\realm\entities\player\Player.cs:line 1385
+[Mark 13] Mark data: -1.
+[Stats 2] Mark data: 60.
+An error occurred with Mark13() function:
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at wServer.realm.entities.player.Player.Mark(Int32 markIndex, Int32 statsIndex, Double statsMultiplier) in C:\Vortex\Vortex Source\wServer\realm\entities\player\Player.cs:line 1385
