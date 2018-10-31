@@ -1,0 +1,221 @@
+ <Object type="0x0328" id="Templar">
+        <Class>Player</Class>
+        <Description>The holy templar fights only for justice. He uses his banner to invigorate allies by it and strikes down his opponents with ease.</Description>
+        <AnimatedTexture>
+            <File>players</File>
+            <Index>15</Index>
+        </AnimatedTexture>
+        <HitSound>player/paladin_hit</HitSound>
+        <DeathSound>player/paladin_death</DeathSound>
+        <Player/>
+        <BloodProb>1.0</BloodProb>
+        <SlotTypes>29, 28, 7, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+        <Equipment>0x52b1, 0x51ab, -1, -1, 0xa22, -1, -1, -1, -1, -1, -1, -1</Equipment>
+        <MaxHitPoints max="800">175</MaxHitPoints>
+        <MaxMagicPoints max="125">72</MaxMagicPoints>
+        <Attack max="85">15</Attack>
+        <Defense max="20">0</Defense>
+        <Speed max="65">10</Speed>
+        <Dexterity max="45">12</Dexterity>
+        <HpRegen max="80">10</HpRegen>
+        <MpRegen max="30">4</MpRegen>
+        <Might max="40">2</Might>
+        <Luck max="40">2</Luck>
+        <LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
+        <LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
+        <LevelIncrease min="1" max="2">Attack</LevelIncrease>
+        <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+        <LevelIncrease min="0" max="2">Speed</LevelIncrease>
+        <LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
+        <LevelIncrease min="0" max="1">HpRegen</LevelIncrease>
+        <LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+        <LevelIncrease min="0" max="1">Might</LevelIncrease>
+        <LevelIncrease min="0" max="0">Luck</LevelIncrease>
+        <UnlockLevel level="20" type="0x0310">Priest</UnlockLevel>
+        <UnlockLevel level="20" type="0x0327">Samurai</UnlockLevel>
+        <UnlockLevel level="20" type="0x031e">Knight</UnlockLevel>
+        <UnlockCost>999</UnlockCost>
+        <DisplayId>Templar</DisplayId>
+    </Object>
+  <Object type="0x51ab" id="Cloth Banner">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd0</Index>
+        </Texture>
+        <Tier>0</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="4"/>
+            <EffectInfo name="Empowerment Duration:" description="3"/>
+            <EffectInfo name="Radius:" description="2"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <Description>A standard banner made of wool cloth.</Description>
+        <ActivateOnEquip stat="20" amount="1">IncrementStat</ActivateOnEquip>
+        <Usable/>
+        <BagType>1</BagType>
+        <MpCost>70</MpCost>
+        <Activate range="2" amount="4" duration="3">Banner</Activate>
+        <Cooldown>6</Cooldown>
+        <feedPower>5</feedPower>
+        <DisplayId>Cloth Banner</DisplayId>
+    </Object>
+    <Object type="0x5045" id="Nature Banner">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd1</Index>
+        </Texture>
+        <Tier>1</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="5"/>
+            <EffectInfo name="Empowerment Duration:" description="4"/>
+            <EffectInfo name="Radius:" description="2"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="1">IncrementStat</ActivateOnEquip>
+        <Description>A banner meant to inspire the greatness of nature.</Description>
+        <Usable/>
+        <BagType>1</BagType>
+        <MpCost>70</MpCost>
+        <Activate range="2" amount="5" duration="4">Banner</Activate>
+        <Cooldown>6.5</Cooldown>
+        <feedPower>10</feedPower>
+        <DisplayId>Nature Banner</DisplayId>
+    </Object>
+    <Object type="0x51ac" id="Heroic Banner">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd2</Index>
+        </Texture>
+        <Tier>2</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="5"/>
+            <EffectInfo name="Empowerment Duration:" description="4"/>
+            <EffectInfo name="Radius:" description="3"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
+        <Description>A banner used by heroic templars.</Description>
+        <Usable/>
+        <BagType>1</BagType>
+        <MpCost>75</MpCost>
+        <Activate range="3" amount="5" duration="4">Banner</Activate>
+        <Cooldown>6.5</Cooldown>
+        <feedPower>20</feedPower>
+        <DisplayId>Heroic Banner</DisplayId>
+    </Object>
+    <Object type="0x51ad" id="Vicious Banner">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd3</Index>
+        </Texture>
+        <Tier>3</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="5"/>
+            <EffectInfo name="Empowerment Duration:" description="5"/>
+            <EffectInfo name="Radius:" description="3"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
+        <Description>This banner can cause vicious beast to flee in fear.</Description>
+        <Usable/>
+        <BagType>2</BagType>
+        <MpCost>80</MpCost>
+        <Activate range="3" amount="5" duration="5">Banner</Activate>
+        <Cooldown>7</Cooldown>
+        <FameBonus>1</FameBonus>
+        <feedPower>45</feedPower>
+        <DisplayId>Vicious Banner</DisplayId>
+    </Object>
+    <Object type="0x51ae" id="Siege Banner">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd4</Index>
+        </Texture>
+        <Tier>4</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="5"/>
+            <EffectInfo name="Empowerment Duration:" description="5"/>
+            <EffectInfo name="Radius:" description="3"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+        <Description>A banner that declares superiority.</Description>
+        <Usable/>
+        <BagType>2</BagType>
+        <MpCost>80</MpCost>
+        <Activate range="3" amount="5" duration="5">Banner</Activate>
+        <Activate effect="Invulnerable" duration="0.8">ConditionEffectSelf</Activate>
+        <Cooldown>7.5</Cooldown>
+      <FameBonus>2</FameBonus>
+        <feedPower>90</feedPower>
+        <DisplayId>Siege Banner</DisplayId>
+    </Object>
+    <Object type="0x51af" id="Banner of Zarcod">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd5</Index>
+        </Texture>
+        <Tier>5</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="5"/>
+            <EffectInfo name="Empowerment Duration:" description="5"/>
+            <EffectInfo name="Radius:" description="4"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+        <Description>Zarcod, a fallen kingdom won't be crushed..This banner proves that.</Description>
+        <Usable/>
+        <BagType>4</BagType>
+        <MpCost>85</MpCost>
+        <Activate range="4" amount="5" duration="5">Banner</Activate>
+        <Activate effect="Invulnerable" duration="1.00">ConditionEffectSelf</Activate>
+        <Cooldown>8</Cooldown>
+        <FameBonus>3</FameBonus>
+        <feedPower>185</feedPower>
+        <DisplayId>Banner of Zarcod</DisplayId>
+    </Object>
+    <Object type="0x51a1" id="Banner of True War">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj6</File>
+            <Index>0xd6</Index>
+        </Texture>
+        <Tier>6</Tier>
+        <ExtraTooltipData>
+            <EffectInfo name="Banner Lifetime:" description="6"/>
+            <EffectInfo name="Empowerment Duration:" description="5"/>
+            <EffectInfo name="Radius:" description="4"/>
+            <EffectInfo name="" description="Empowers all players near banner."/>
+        </ExtraTooltipData>
+        <SlotType>28</SlotType>
+        <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+        <Description>This banner represents true war and battle.</Description>
+        <Usable/>
+        <BagType>4</BagType>
+        <MpCost>90</MpCost>
+        <Activate range="4" amount="6" duration="5">Banner</Activate>
+        <Activate effect="Invulnerable" duration="1.25">ConditionEffectSelf</Activate>
+        <Cooldown>8</Cooldown>
+        <FameBonus>4</FameBonus>
+        <feedPower>380</feedPower>
+        <DisplayId>Banner of True War</DisplayId>
+    </Object>
